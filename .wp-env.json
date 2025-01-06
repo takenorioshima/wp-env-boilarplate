@@ -1,0 +1,6 @@
+{
+  "themes": ["./theme"],
+  "mappings": {
+    "wp-content/themes/theme": "./theme"
+  }
+}
