@@ -11,7 +11,7 @@
     "watch": "nodemon --watch src --ext scss,js --exec \"npm-run-all css js\"",
     "css": "npm-run-all css-compile css-postcss",
     "css-compile": "sass --style compressed --source-map --embed-sources --no-error-css --quiet src/sass/app.scss:theme/css/app.min.css",
-    "css-postcss": "postcss theme/css/*.css --use autoprefixer -map -d css",
+    "css-postcss": "postcss theme/css/*.css --use autoprefixer -map --replace",
     "js": "yarn esbuild --bundle src/js/app.js --outfile=theme/js/app.min.js --minify --sourcemap",
     "wp-env": "wp-env"
   },
